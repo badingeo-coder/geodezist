@@ -2,6 +2,9 @@
   "name": "geodezist-field-sim",
   "version": "1.0.0",
   "private": true,
+  "companyName": "Minin University",
+  "productName": "Геодезист: Полевой выезд",
+  "author": "Бадьин М.М., Мартилова Н.В. — Мининский университет",
   "description": "Геодезист: Полевой выезд — симулятор тахеометра (WebGL, без зависимостей)",
   "scripts": {
     "build:levels": "node tools/build-levels.js",

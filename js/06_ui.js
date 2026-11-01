@@ -274,10 +274,16 @@
         '<div>ТОЧНОСТЬ<b>углы 1″, расстояния 1 мм</b></div>' +
         '<div>ЭКСПОРТ<b>CSV полевого журнала</b></div>' +
         '</div></div>' +
+        '<div class="authors-block">' +
+        '<h3>Авторы и организация</h3>' +
+        '<div class="authors-people"><span>Бадьин Михаил Михайлович</span><span>Мартилова Наталья Викторовна</span></div>' +
+        '<div class="authors-org">Мининский университет<span>Нижегородский государственный педагогический университет им. К. Минина</span></div>' +
+        '</div>' +
         '<div class="level-section-head" style="margin-top:34px"><h3>УРОВНИ</h3><span>6 заданий · от обучения до зачётного выезда</span></div>' +
         '<div class="level-grid">' + cards + '</div>' +
         '<div class="form-row" style="margin-top:18px"><button class="btn" data-act="custom-level">Свободная локация — задание преподавателя</button></div>' +
         '<div class="title-foot">Симулятор не заменяет практическое обучение и не эмулирует протоколы конкретных тахеометров. Все координаты и объекты — учебные. Управление: WASD, мышь, E, Tab, J, ЛКМ.</div>' +
+        '<div class="title-copyright">© Мининский университет · Бадьин М.М., Мартилова Н.В.</div>' +
         '</div>',
       onMount: function () {
         var sheet = this.root.querySelector('.sheet');
