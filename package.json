@@ -1,0 +1,12 @@
+{
+  "name": "geodezist-field-sim",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Геодезист: Полевой выезд — симулятор тахеометра (WebGL, без зависимостей)",
+  "scripts": {
+    "build:levels": "node tools/build-levels.js",
+    "build:dist": "node tools/build-dist.js",
+    "build": "node tools/build-levels.js && node tools/build-dist.js",
+    "test": "node tests/survey-math.test.js && node tests/game-flow.test.js && node tests/ui-smoke.test.js"
+  }
+}
