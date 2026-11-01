@@ -522,8 +522,8 @@ window.GEO.LEVELS = [
       },
       {
         "id": "P10",
-        "x": 996,
-        "y": 2002,
+        "x": 993.6,
+        "y": 2004.2,
         "z": 100,
         "prismHeight": 1.5,
         "kind": "survey",
@@ -549,26 +549,6 @@ window.GEO.LEVELS = [
         "kind": "survey",
         "required": true,
         "note": "Опора"
-      },
-      {
-        "id": "P13",
-        "x": 1010,
-        "y": 1980,
-        "z": 100.04,
-        "prismHeight": 1.5,
-        "kind": "extra",
-        "required": false,
-        "note": "Контрольная точка"
-      },
-      {
-        "id": "P14",
-        "x": 1032,
-        "y": 1995,
-        "z": 100.06,
-        "prismHeight": 1.5,
-        "kind": "extra",
-        "required": false,
-        "note": "Контрольная точка"
       }
     ],
     "designPoints": [],

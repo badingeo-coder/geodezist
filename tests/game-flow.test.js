@@ -561,6 +561,19 @@ test('свободная съёмка: студент добавляет точ�
   assert.equal(game.pointName(t.id), 'Точка 1');
 });
 
+test('P10 «Край площадки» виден вне бетонной площадки и стоит в очереди после P9', () => {
+  const game = new GEO.Game();
+  game.startLevel('level_03');
+  const p10 = game.level.targets.filter((t) => t.id === 'P10')[0];
+  assert.ok(p10, 'P10 существует');
+  assert.ok(p10.x < 994 || p10.y > 2005, 'P10 вынесен за бетонную площадку 12×10 м');
+  const box = game.world.boxPoles;
+  assert.equal(box.indexOf('P10'), box.indexOf('P9') + 1);
+  assert.equal(box.indexOf('P11'), box.indexOf('P10') + 1);
+  assert.equal(box.indexOf('P12'), box.indexOf('P11') + 1);
+  assert.equal(box.length, 9, 'в ящике только 9 обязательных вешек, без P13/P14');
+});
+
 test('три подъёмных винта меняют наклон', () => {  const game = new GEO.Game();
   game.startLevel('level_01');
   game.player.x = 0;
